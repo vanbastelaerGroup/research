@@ -1,0 +1,153 @@
+/* 
+#navpill:hover {
+    background-color: black;
+    opacity: .3;
+    } */
+
+    *{
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+h1{
+  z-index: 20;
+  position: relative;
+  
+  text-align: center;
+  margin-top: 1.5rem;
+  position: relative;
+
+
+}
+
+#navbar-inner{
+  background-color:#3a3985 ;
+}
+
+#people {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    z-index: 20;
+}
+
+.col{
+    z-index: 20;
+    position: relative;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-content: space-around;
+    z-index: 20;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+    align-content: space-around;
+    z-index: 20;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    z-index: 20;
+  }
+
+
+  img:hover  + .name {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    color: blue;
+  } 
+
+  #picofperson:hover {
+    transform: scale(1.5);
+  }
+
+  .bug {
+    position: absolute;
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  .bug:hover {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+  }
+
+  #rotatingbackground {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    width: auto;        
+    min-height: 100%;        /* <--- this section makes sure that the video on the homepage is properly formatted*/
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    }
+
+.video-background {
+    position: static;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1; /* Ensure the video stays below the nav bar */
+    }
+    
+.video-foreground {
+    position: static;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    margin-bottom: 100%;
+    }
+
+    #navpill{
+  
+      height:100px;
+       text-align:center;
+       position: relative;
+       z-index: 20;
+       display: flex;
+       align-items: center;
+    
+  }
+  
+  #navpill:hover {
+      background-color: black;
+      opacity: .3;
+      /* height: 10px; */
+      }
+   
+      #publi{
+
+        position: fixed;
+        opacity: 0.2;
+      }    
+
+  #grid{
+    position: relative;
+
+  }
+

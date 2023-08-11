@@ -1,0 +1,81 @@
+#rotatingbackground {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    width: auto;        
+    min-height: 100%;        /* <--- this section makes sure that the video on the homepage is properly formatted*/
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    }
+
+.video-background {
+    position: static;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1; /* Ensure the video stays below the nav bar */
+    }
+    
+.video-foreground {
+    position: static;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    margin-bottom: 100%;
+    }
+
+    #navpill{
+  
+        height:100px;
+         text-align:center;
+         position: relative;
+         z-index: 20;
+         display: flex;
+         align-items: center;
+      
+    }
+    #navpill:hover {
+        background-color: black;
+        opacity: .3;
+        }
+
+    #calendar {
+        z-index: 20;
+        position: relative;
+        margin: auto;
+        margin-top: 1%;
+    }
+
+    h1 {
+        text-align: center;
+        z-index: 20;
+        position: relative;
+        margin-top: 5%;
+    }
+
+    h3 {
+        text-align: center;
+        z-index: 20;
+        position: relative;
+    }
+
+    #wrap{
+        position: relative;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #publi{
+
+        position: fixed;
+        opacity: 0.2;
+    }
